@@ -1,0 +1,166 @@
+{
+  "short_name": "Prevently AI",
+  "name": "Prevently AI - Your Digital Health Twin",
+  "description": "AI-powered preventive healthcare platform with personalized health insights and digital twin technology",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180",
+      "purpose": "any"
+    },
+    {
+      "src": "maskable-icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "maskable-icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#667eea",
+  "background_color": "#667eea",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "categories": ["health", "medical", "lifestyle", "productivity"],
+  "shortcuts": [
+    {
+      "name": "Daily Health Check",
+      "short_name": "Health Check",
+      "description": "Quick access to your daily health metrics",
+      "url": "/health",
+      "icons": [
+        {
+          "src": "shortcut-health.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "AI Health Coach",
+      "short_name": "AI Coach",
+      "description": "Get personalized health tips from your AI coach",
+      "url": "/ai",
+      "icons": [
+        {
+          "src": "shortcut-ai.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Medication Tracker",
+      "short_name": "Medications",
+      "description": "Track and manage your medications",
+      "url": "/medications",
+      "icons": [
+        {
+          "src": "shortcut-meds.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Family Health",
+      "short_name": "Family",
+      "description": "Monitor your family's health status",
+      "url": "/family",
+      "icons": [
+        {
+          "src": "shortcut-family.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  },
+  "handle_links": "preferred",
+  "share_target": {
+    "action": "/share-target",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url",
+      "files": [
+        {
+          "name": "files",
+          "accept": ["image/*", "application/pdf", ".txt", ".csv"]
+        }
+      ]
+    }
+  },
+  "protocol_handlers": [
+    {
+      "protocol": "web+prevently",
+      "url": "/handle-protocol?url=%s"
+    }
+  ],
+  "file_handlers": [
+    {
+      "action": "/handle-file",
+      "accept": {
+        "text/csv": [".csv"],
+        "application/pdf": [".pdf"],
+        "text/plain": [".txt"]
+      }
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshot-mobile-1.png",
+      "type": "image/png",
+      "sizes": "390x844",
+      "form_factor": "narrow",
+      "label": "Dashboard view showing health metrics and AI tips"
+    },
+    {
+      "src": "screenshot-mobile-2.png",
+      "type": "image/png",
+      "sizes": "390x844",
+      "form_factor": "narrow",
+      "label": "AI Health Coach providing personalized recommendations"
+    },
+    {
+      "src": "screenshot-desktop-1.png",
+      "type": "image/png",
+      "sizes": "1280x720",
+      "form_factor": "wide",
+      "label": "Desktop view of the complete health dashboard"
+    }
+  ]
+}

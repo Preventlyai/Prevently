@@ -1,0 +1,97 @@
+{
+  "name": "prevently-ai-app",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Prevently AI - Your Digital Health Twin for Preventive Healthcare",
+  "author": "Prevently Team",
+  "license": "MIT",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "react-scripts start",
+    "serve": "serve -s build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "lint": "eslint src/**/*.{js,jsx,ts,tsx}",
+    "lint:fix": "eslint src/**/*.{js,jsx,ts,tsx} --fix",
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx,css,md}",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@types/node": "^18.15.0",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "typescript": "^4.9.5",
+    "framer-motion": "^10.12.0",
+    "lucide-react": "^0.244.0",
+    "recharts": "^2.6.2",
+    "date-fns": "^2.30.0",
+    "react-intersection-observer": "^9.5.2",
+    "react-spring": "^9.7.2",
+    "react-use-gesture": "^9.1.3",
+    "react-helmet-async": "^1.3.0",
+    "react-router-dom": "^6.11.0",
+    "zustand": "^4.3.8",
+    "react-query": "^3.39.3",
+    "axios": "^1.4.0",
+    "lodash": "^4.17.21",
+    "dayjs": "^1.11.8",
+    "react-hook-form": "^7.44.3",
+    "react-hot-toast": "^2.4.1",
+    "react-confetti": "^6.1.0",
+    "react-canvas-confetti": "^1.3.0",
+    "react-speech-recognition": "^3.10.0",
+    "react-text-to-speech": "^1.2.0",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.5.2",
+    "@types/lodash": "^4.14.195",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^5.0.0",
+    "prettier": "^2.8.8",
+    "serve": "^14.2.0",
+    "workbox-webpack-plugin": "^6.6.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "homepage": ".",
+  "keywords": [
+    "health",
+    "ai",
+    "preventive",
+    "healthcare",
+    "digital-twin",
+    "wellness",
+    "react",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prevently-ai/prevently-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prevently-ai/prevently-app/issues"
+  }
+}
